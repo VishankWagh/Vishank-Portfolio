@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/vishank-portfolio/static/css/main.2bc268b3.css",
+    "main.js": "/vishank-portfolio/static/js/main.71f64b8f.js",
+    "static/media/proj_quikbuy.png": "/vishank-portfolio/static/media/proj_quikbuy.00ce0c5eaae1b0fdcbcf.png",
+    "static/media/proj_technology.png": "/vishank-portfolio/static/media/proj_technology.5171c33dd1405313a4c0.png",
+    "static/media/proj_drone.png": "/vishank-portfolio/static/media/proj_drone.5fe5349fabe6d6d02481.png",
+    "static/media/my-resume.png": "/vishank-portfolio/static/media/my-resume.8dd46d4e0e2789913d64.png",
+    "static/media/pflio_img_edt.png": "/vishank-portfolio/static/media/pflio_img_edt.11031a298aec5aa3554e.png",
+    "static/media/certi_cp.jpg": "/vishank-portfolio/static/media/certi_cp.b56afa7c957261040cfe.jpg",
+    "static/media/certi_lstn.jpg": "/vishank-portfolio/static/media/certi_lstn.cb4b72111bdd32edca15.jpg",
+    "static/media/reactjs.jpg": "/vishank-portfolio/static/media/reactjs.d5fb49719bfde85d2de5.jpg",
+    "static/media/proj_orderdesk.png": "/vishank-portfolio/static/media/proj_orderdesk.4ab7ec9afe71b6315730.png",
+    "static/media/proj_pomodor.png": "/vishank-portfolio/static/media/proj_pomodor.6c997e88ef3d9469f28d.png",
+    "static/media/certi_wdev.jpg": "/vishank-portfolio/static/media/certi_wdev.93cd21da3d76dbefe65d.jpg",
+    "static/media/nodejs.jpg": "/vishank-portfolio/static/media/nodejs.5c37e07f205c9b9d169b.jpg",
+    "static/media/certi_udmy.jpg": "/vishank-portfolio/static/media/certi_udmy.f2f646c4cfebd80e1675.jpg",
+    "static/media/html.jpg": "/vishank-portfolio/static/media/html.0898ecd28252de44378c.jpg",
+    "static/media/proj_todo.png": "/vishank-portfolio/static/media/proj_todo.5f294f6ea24546818015.png",
+    "static/media/js.jpg": "/vishank-portfolio/static/media/js.46fd00d4ff9307e1ea6c.jpg",
+    "static/media/expressjs.jpg": "/vishank-portfolio/static/media/expressjs.625c25d34cf93b229d92.jpg",
+    "static/media/css.jpg": "/vishank-portfolio/static/media/css.282443c4fed564f9fb34.jpg",
+    "static/media/c.jpg": "/vishank-portfolio/static/media/c.7faec44baa32e6214e65.jpg",
+    "static/media/python.jpg": "/vishank-portfolio/static/media/python.43345aa45a8f57d72a52.jpg",
+    "static/media/mongodb.jpg": "/vishank-portfolio/static/media/mongodb.690c416f7ecef1085c60.jpg",
+    "index.html": "/vishank-portfolio/index.html",
+    "main.2bc268b3.css.map": "/vishank-portfolio/static/css/main.2bc268b3.css.map",
+    "main.71f64b8f.js.map": "/vishank-portfolio/static/js/main.71f64b8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bc268b3.css",
+    "static/js/main.71f64b8f.js"
+  ]
+}
