@@ -5,7 +5,7 @@ function Footer() {
         <>
             <footer>
                 <div className="createdBy">Created by - VISHANK WAGH</div>
-                <div className="copy">&copy; Copyrigth 2023</div>
+                <div className="copy">&copy; Copyright 2024</div>
             </footer>
         </>
     )

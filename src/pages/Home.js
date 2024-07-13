@@ -1,34 +1,23 @@
 import "../styles/Home.css";
-import men from "../images/pflio_img_edt.png";
-import reactLogo from "../images/react-logo.png";
+import prof from "../images/pflio_img_edt.png";
 // import certiImg from "../images/certificate.png";
-import react from "../images/reactjs.jpg";
-import expressjs from "../images/expressjs.jpg";
-import mongo from "../images/mongodb.jpg";
-import nodejs from "../images/nodejs.jpg";
-import htmlLogo from "../images/html.jpg";
-import css from "../images/css.jpg";
-import js from "../images/js.jpg";
-import cProg from "../images/c.jpg";
-import python from "../images/python.jpg";
-import qbProj from "../images/proj_quikbuy.png";
-import drnProj from "../images/proj_drone.png";
-import pmdrProj from "../images/proj_pomodor.png";
-import tchProj from "../images/proj_technology.png";
-import tdoProj from "../images/proj_todo.png";
-import orddkProj from "../images/proj_orderdesk.png";
-import crticp from "../images/certi_cp.jpg";
-import crtilstn from "../images/certi_lstn.jpg";
-import crtiudmy from "../images/certi_udmy.jpg";
-import crtiwdev from "../images/certi_wdev.jpg";
-import myresume from "../images/my-resume.png";
+import resumePDF from "../files/RESUME.pdf";
+import resume from "../images/resume_image.jpg";
+import Skills from "../components/Skills";
+import Project from "../components/Project";
+import Certificate from "../components/Certificate";
+import Experience from "../components/Experience";
+import githubIcon from "../images/github.png";
+import mailIcon from "../images/mail.png";
+import { skills, exprSkills, exprDesc } from '../files/data.js';
 
 function Home() {
+    alert("Please Prefer DESKTOP / LAPTOP for best experience.")
     return (
         <>
             <div className="home" id="home">
                 <a className="top-icon" href="#home">
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         expand_less
                     </span>
                 </a>
@@ -47,8 +36,8 @@ function Home() {
                         </div>
                     </div>
                     <div className="right-sec">
-                        <div className="dev-logo"><img src="https://icons8.com/icon/11260/source-code" alt="" /></div>
-                        <img className="my-img" src={men} alt="" />
+                        <div className="dev-logo-div"><img src="https://icons8.com/icon/11260/source-code" alt="" /></div>
+                        <img className="my-img" src={prof} alt="" />
                         <span className="dev-logo">{"</>"}</span>
                         <span className="dev-logo">{"</>"}</span>
                     </div>
@@ -56,13 +45,13 @@ function Home() {
                 <section className="about" id="about">
                     <div className="sec-title">About</div>
                     <div className="abt-content">
-                        <b>👋 Hi there!</b> myself Vishank Shailesh Wagh, an aspiring web developer pursuing an Integrated Master's in Computer Applications at Parul University. 🌐
+                        <b>👋 Welcome,</b> myself Vishank Shailesh Wagh, an aspiring web developer pursuing an Integrated Master's in Computer Applications at Parul University. 🌐
                         <br />
                         <br />
                         💻 Skilled in ReactJS, NodeJS, ExpressJS, and MongoDB, I've already crafted a dynamic e-commerce project for local retail shops during my academic journey. 🛍
                     </div>
                     <div className="abt-btns">
-                        <a href="#contact" className="hireme-btn">Hire Me</a>
+                        <a href="#contact" className="hireme-btn">Contact Me</a>
                         <a href="#about" className="resume-btn" onClick={() => {
                             const vr = document.getElementById("view-resume").style;
                             vr.visibility = "visible";
@@ -76,9 +65,11 @@ function Home() {
                             vr.visibility = "hidden";
                         }}>&times;</div>
                         <div className="resume-img">
-                            <img src={myresume} alt="View my Resume" />
+                            {/* <object class="pdf" data={`${resumePDF}?zoom=67%`} zoom="67%">
+                            </object> */}
+                            <img src={resume} alt="" className="pdf" />
                             <div className="dwnld-btn">
-                                <a href={myresume} download="Vishank-Wagh_Resume">Download Resume</a>
+                                <a href={resumePDF} download="Vishank-Wagh_Resume">Download Resume</a>
                             </div>
                         </div>
                     </div>
@@ -86,338 +77,42 @@ function Home() {
                 <section className="my-skill" id="my-skill">
                     <div className="sec-title">My Skills</div>
                     <div className="skill-list">
-                        <div className="skills">
-                            <div className="skl-title">Frontend</div>
-                            <div className="skill">
-
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={react} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">React JS</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "70%" }}><div className="prcnt">70%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={htmlLogo} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">HTML 5</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "80%" }}><div className="prcnt">80%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={css} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">CSS 3</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "80%" }}><div className="prcnt">80%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={js} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Javascript</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "75%" }}><div className="prcnt">75%</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skills">
-                            <div className="skl-title">Backend</div>
-                            <div className="skill">
-
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={nodejs} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Node JS</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "70%" }}><div className="prcnt">70%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={expressjs} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Express JS</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "70%" }}><div className="prcnt">70%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={mongo} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Mongo DB</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "75%" }}><div className="prcnt">75%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={js} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Javascript</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "75%" }}><div className="prcnt">75%</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="skills others">
-                            <div className="skl-title">Other</div>
-                            <div className="skill">
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={cProg} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">C Programming</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "80%" }}><div className="prcnt">80%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={python} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Python</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "65%" }}><div className="prcnt">65%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={reactLogo} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Creativity</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "80%" }}><div className="prcnt">80%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={reactLogo} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Problem Solving</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "85%" }}><div className="prcnt">85%</div></div></div>
-                                    </div>
-                                </div>
-                                <div className="skl-content">
-                                    <div className="skl-logo">
-                                        <img src={reactLogo} alt="" />
-                                    </div>
-                                    <div className="skl">
-                                        <div className="skl-name">Punctuality</div>
-                                        <div className="skl-bar"><div className="skl-prcnt" style={{ width: "90%" }}><div className="prcnt">90%</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Skills title="Frontend" skills={skills.frontend} />
+                        <Skills title="Backend" skills={skills.backend} />
+                        <Skills title="Other" skills={skills.other} />
+                    </div>
+                </section>
+                <section className="experiences" id="experiences">
+                    <div className="sec-title">Experience</div>
+                    <div className="expr-list">
+                        <div className="expr-line"></div>
+                        <Experience first="expr-first" logo="mrLgg" company='Mr Loggage' role='Full Stack Web Developer' duration="Jun 2024 - Present" desc={exprDesc.mrLgg} skills={exprSkills.mrLgg} />
+                        <Experience logo="nvpd" company='Navpad Infotech' role='Full Stack Developer' duration="Jan 2024 - May 2024" desc={exprDesc.navPd} skills={exprSkills.navPd} />
                     </div>
                 </section>
                 <section className="projects" id="projects">
                     <div className="sec-title">Projects</div>
                     <div className="proj-list">
-                        <div className="project">
-                            <div className="proj-img">
-                                <img src={qbProj} alt="" />
-                            </div>
-                            <div className="proj-content">
-                                <div className="proj-title">Quik Buy</div>
-                                <div className="proj-desc">
-                                    <p>
-                                        Streamline your local shopping experience with Quik Buy—an MERN stack online store connecting you to nearby retail shops for effortless product ordering and doorstep delivery.
-                                    </p>
-
-                                </div>
-                                <button className="github-btn btn">
-                                    <a href="https://github.com/VishankWagh/Online-Local-Store.git" target="_blank" rel="noreferrer">
-                                        Github link <span class="material-symbols-outlined">
-                                            call_made
-                                        </span>
-                                    </a>
-                                </button>
-                                <div className="proj-lang">
-                                    <b>Technologies</b> : ReactJs, NodeJs, ExpressJs, MongoDb
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project">
-                            <div className="proj-img">
-                                <img src={orddkProj} alt="" />
-                            </div>
-                            <div className="proj-content">
-                                <div className="proj-title">Order Desk</div>
-                                <div className="proj-desc">
-                                    <p>
-                                        Order desk is a portal for customers to order for food in restaurent by just few clicks and get the product delivered to their table in a quick and simple way.
-                                    </p>
-                                </div>
-                                <div className="proj-lang">
-                                    <b>Technologies</b> : ReactJs, NodeJs, ExpressJs, MongoDb
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project">
-                            <div className="proj-img">
-                                <img src={pmdrProj} alt="" />
-                            </div>
-                            <div className="proj-content">
-                                <div className="proj-title">Pomodoro App Clone</div>
-                                <div className="proj-desc">
-                                    <p>
-                                        Boost your productivity with Pomodor—an efficient React app that helps you work in focused intervals, setting timers like 25 minutes, punctuated by customizable short breaks of your choice.
-                                    </p>
-                                </div>
-                                {/* <button className="github-btn btn">
-                                    <a href="">
-                                        Github link <span class="material-symbols-outlined">
-                                            call_made
-                                        </span>
-                                    </a>
-                                </button> */}
-                                <div className="proj-lang">
-                                    <b>Technologies</b> : HTML 5, CSS 3, ReactJs
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project">
-                            <div className="proj-img">
-                                <img src={tdoProj} alt="" />
-                            </div>
-                            <div className="proj-content">
-                                <div className="proj-title">Todo List</div>
-                                <div className="proj-desc">
-                                    <p>
-                                        Stay organized with Todo—an interactive React app for swiftly adding and managing your daily tasks, ensuring a productive day ahead.
-                                    </p>
-                                </div>
-                                {/* <button className="github-btn btn">
-                                    <a href="">
-                                        Github link <span class="material-symbols-outlined">
-                                            call_made
-                                        </span>
-                                    </a>
-                                </button> */}
-                                <div className="proj-lang">
-                                    <b>Technologies</b> : HTML 5, CSS 3, ReactJs
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project">
-                            <div className="proj-img">
-                                <img src={drnProj} alt="" />
-                            </div>
-                            <div className="proj-content">
-                                <div className="proj-title">Futuristic Drones Website</div>
-                                <div className="proj-desc">
-                                    <p>
-                                        Explore the world of drones through this classic portfolio website, showcasing the cutting-edge features of the company's drone technology.
-                                    </p>
-                                </div>
-                                <button className="github-btn btn">
-                                    <a href="https://vsw-designs-drones-technology.w3spaces.com/" target="_blank" rel="noreferrer">
-                                        View Live <span class="material-symbols-outlined">
-                                            call_made
-                                        </span>
-                                    </a>
-                                </button>
-                                <div className="proj-lang">
-                                    <b>Technologies</b> : HTML 5, CSS 3
-                                </div>
-                            </div>
-                        </div>
-                        <div className="project">
-                            <div className="proj-img">
-                                <img src={tchProj} alt="" />
-                            </div>
-                            <div className="proj-content">
-                                <div className="proj-title">Future Technology</div>
-                                <div className="proj-desc">
-                                    <p>
-                                        Dive into the future with "Future Technologies," a captivating blog featuring a professional and visually appealing GUI that also showcases my designing ability. Explore the possibilities of tomorrow today.
-                                    </p>
-                                </div>
-                                {/* <button className="github-btn btn">
-                                    <a href="">
-                                        Github link <span class="material-symbols-outlined">
-                                            call_made
-                                        </span>
-                                    </a>
-                                </button> */}
-                                <div className="proj-lang">
-                                    <b>Technologies</b> : HTML 5, CSS 3
-                                </div>
-                            </div>
-                        </div>
+                        <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." />
+                        <Project title="Quik Buy" logo="qbProj" github="https://github.com/VishankWagh/Online-Local-Store" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Streamline your local shopping experience with Quik Buy—an MERN stack online store connecting you to nearby retail shops for effortless product ordering and doorstep delivery." />
+                        <Project title="Order Desk" logo="orddkProj" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Order desk is a portal for customers to order for food in restaurent by just few clicks and get the product delivered to their table in a quick and simple way." />
+                        <Project title="Pomodoro App Clone" logo="pmdrProj" techs="HTML 5, CSS 3, ReactJs" desc="Boost your productivity with Pomodor—an efficient React app that helps you work in focused intervals, setting timers like 25 minutes, punctuated by customizable short breaks of your choice." />
+                        <Project title="Todo List" logo="tdoProj" techs="HTML 5, CSS 3, ReactJs" desc="Stay organized with Todo—an interactive React app for swiftly adding and managing your daily tasks, ensuring a productive day ahead." />
+                        <Project title="Futuristic Drones Website" logo="drnProj" live="https://vsw-designs-drones-technology.w3spaces.com/" techs="HTML 5, CSS 3" desc="Explore the world of drones through this classic portfolio website, showcasing the cutting-edge features of the company's drone technology." />
+                        <Project title="Future Technology" logo="tchProj" techs="HTML 5, CSS 3" desc="Dive into the future with 'Future Technologies,' a captivating blog featuring a professional and visually appealing GUI that also showcases my designing ability. Explore the possibilities of tomorrow today." />
                     </div>
                 </section>
                 <section className="certifications" id="certifications">
                     <div className="sec-title">Certifications</div>
                     <div className="certi-list">
-                        <div className="certificate">
-                            <div className="certi-title">MERN Stack Development Course</div>
-                            <div className="certi-img">
-                                <img src={crtiudmy} alt="" />
-                            </div>
-                            <div className="certi-crd">
-                                <div className="crti-num">01</div>
-                            </div>
-                        </div>
-                        <div className="certificate">
-                            <div className="certi-title">Web Development Fundamentals</div>
-                            <div className="certi-img">
-                                <img src={crtiwdev} alt="" />
-                            </div>
-                            <div className="certi-crd">
-                                <div className="crti-num">02</div>
-                            </div>
-                        </div>
-                        <div className="certificate">
-                            <div className="certi-title">Listening Competition FunFest 2022-23</div>
-                            <div className="certi-img">
-                                <img src={crtilstn} alt="" />
-                            </div>
-                            <div className="certi-crd">
-                                <div className="crti-num">03</div>
-                            </div>
-                        </div>
-                        <div className="certificate">
-                            <div className="certi-title">C Programming IIT Bombay</div>
-                            <div className="certi-img">
-                                <img src={crticp} alt="" />
-                            </div>
-                            <div className="certi-crd">
-                                <div className="crti-num">04</div>
-                            </div>
-                        </div>
+                        <Certificate title='Udemy: The Web Developer Bootcamp 2024' imgUrl='crtiudmy1' num='01' />
+                        <Certificate title='Udemy: The Complete 2023 Web Development Bootcamp' imgUrl='crtiudmy2' num='02' />
+                        <Certificate title='Scaler: SOLID Principles every developer must know' imgUrl='crtisolid' num='03' />
+                        <Certificate title='Sololearn: Web Development Fundamentals' imgUrl='crtiwdev' num='04' />
+                        <Certificate title='Listening Competition FunFest 2022-23' imgUrl='crtilstn' num='05' />
                     </div>
                 </section>
-                {/* <section className="education">
-                    <div className="sec-title">Education</div>
-                    <div className="education-list">
-                        <div className="edu">
-                            <div className="edu-title">HSC - 2020-2021</div>
-                            <div className="edu-desc">Compeleted at St. Joseph's E. T. High School, Valsad</div>
-                        </div>
-                        <div className="edu">
-                            <div className="edu-title">HSC - 2020-2021</div>
-                            <div className="edu-desc">Compeleted at St. Joseph's E. T. High School, Valsad</div>
-                        </div>
-                        <div className="edu">
-                            <div className="edu-title">HSC - 2020-2021</div>
-                            <div className="edu-desc">Compeleted at St. Joseph's E. T. High School, Valsad</div>
-                        </div>
-                    </div>
-                </section> */}
-                <section section className="contact" id="contact" >
+                <section className="contact" id="contact" >
                     <div className="sec-title">Contact Me</div>
                     <div className="contact-me">
                         <div className="contact-content">
@@ -426,14 +121,16 @@ function Home() {
                                 <div className="cnt-desc">
                                     Feel free to reach out—I'm just a click away to connect and collaborate !
                                 </div>
+                                <div className="cnt-btns">
+                                    <a href="mailto:vishankswagh@gmail.com" className="mail-btn">
+                                        <div className="">Get in Touch...</div>
+                                        <img src={mailIcon} alt="" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div className="contacts">
                             <div className="cnt-bx2">
-                                <a href="mailto:vishankswagh@gmail.com" className="cnt-info">
-                                    <span className="cnt-icon">&#64;</span>
-                                    <div className="cnt em">vishankswagh@gmail.com</div>
-                                </a>
                                 <div onClick={() => {
                                     navigator.clipboard.writeText
                                         ("9408808941");
@@ -445,6 +142,12 @@ function Home() {
                                 <a href="https://www.linkedin.com/in/vishank-wagh-11385724a" target="_blank" className="cnt-info" rel="noreferrer">
                                     <span className="cnt-icon">in</span>
                                     <div className="cnt">Linkedin Profile</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/vishank-wagh-11385724a" target="_blank" className="cnt-info" rel="noreferrer">
+                                    <span className="cnt-icon">
+                                        <img src={githubIcon} alt="" />
+                                    </span>
+                                    <div className="cnt">Github Profile</div>
                                 </a>
                             </div>
                         </div>

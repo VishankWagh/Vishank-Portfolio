@@ -1,4 +1,6 @@
 import "../styles/Header.css";
+import NavLink from "./NavLink";
+import hamB from "../images/ham-b.png";
 
 function Header() {
     return (
@@ -6,66 +8,19 @@ function Header() {
             <div className="navbar">
                 <nav>
                     <a href="#home" className="logo">Portfolio</a>
-                    {/* <li className="nav-link menu">
-                        <span class="material-symbols-outlined">
-                            menu
-                        </span>
-                        <div className="link-title">
-                            About
-                        </div></li> */}
                     <ul className="nav-links">
-                        <a className="nav-link" href="#about">
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    person
-                                </span>
-                                <div className="link-title">
-                                    About
-                                </div></li>
-                        </a>
-                        <a className="nav-link" href="#my-skill">
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    checklist
-                                </span>
-                                <div className="link-title">
-                                    Skills
-                                </div></li>
-                        </a>
-                        <a className="nav-link" href="#projects">
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    computer
-                                </span>
-                                <div className="link-title">
-                                    Projects
-                                </div></li>
-                        </a>
-                        <a className="nav-link" href="#certifications">
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    workspace_premium
-                                </span>
-                                <div className="link-title">
-                                    Certification
-                                </div></li>
-                        </a>
-                        <a className="nav-link" href="#contact">
-                            <li>
-                                <span class="material-symbols-outlined">
-                                    call
-                                </span>
-                                <div className="link-title">
-                                    Contact
-                                </div></li>
-                        </a>
-                        {/* <li className="nav-link">
-                            <span class="material-symbols-outlined">
-                                school
-                            </span>
-                            <div className="link-title">
-                                Education
-                            </div></li> */}
+                        <div className="ham-logo" >
+                            <img src={hamB} alt="" />
+                        </div>
+                        <div className="lis">
+                            <NavLink text="About" icon="person" href="about" />
+                            <NavLink text="Skills" icon="checklist" href="my-skill" />
+                            <NavLink text="Experience" icon="badge" href="experiences" />
+                            <NavLink text="Projects" icon="computer" href="projects" />
+                            <NavLink text="Certifications" icon="workspace_premium" href="certifications" />
+                            <NavLink text="Contact" icon="call" href="contact" />
+
+                        </div>
                     </ul>
                 </nav>
             </div>
