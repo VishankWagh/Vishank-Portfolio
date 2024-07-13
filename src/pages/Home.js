@@ -12,7 +12,6 @@ import mailIcon from "../images/mail.png";
 import { skills, exprSkills, exprDesc } from '../files/data.js';
 
 function Home() {
-    alert("Please Prefer DESKTOP / LAPTOP for best experience.")
     return (
         <>
             <div className="home" id="home">
