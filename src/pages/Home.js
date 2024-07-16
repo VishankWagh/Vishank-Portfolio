@@ -2,7 +2,7 @@ import "../styles/Home.css";
 import prof from "../images/pflio_img_edt.png";
 // import certiImg from "../images/certificate.png";
 import resumePDF from "../files/RESUME.pdf";
-import resume from "../images/resume_image.jpg";
+import resume from "../images/resume_image.png";
 import Skills from "../components/Skills";
 import Project from "../components/Project";
 import Certificate from "../components/Certificate";
@@ -10,8 +10,13 @@ import Experience from "../components/Experience";
 import githubIcon from "../images/github.png";
 import mailIcon from "../images/mail.png";
 import { skills, exprSkills, exprDesc } from '../files/data.js';
+import axios from "axios";
 
 function Home() {
+    (async () => {
+        const response = await axios.get(`https://slms-backend.vercel.app/get/visitor-count/portfolio-v`);
+        console.log("Visitor Count:", response.data.visitCount);
+    })();
     return (
         <>
             <div className="home" id="home">
@@ -92,13 +97,14 @@ function Home() {
                 <section className="projects" id="projects">
                     <div className="sec-title">Projects</div>
                     <div className="proj-list">
-                        <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." />
-                        <Project title="Quik Buy" logo="qbProj" github="https://github.com/VishankWagh/Online-Local-Store" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Streamline your local shopping experience with Quik Buy—an MERN stack online store connecting you to nearby retail shops for effortless product ordering and doorstep delivery." />
+                        <Project title="Student Leave Management System" logo="slmsProj" github="https://github.com/VishankWagh/SLMS" live="https://student-leave-management-system.netlify.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech." />
+                        <Project title="Quik Buy" logo="qbProj" github="https://github.com/VishankWagh/Online-Local-Store" live="https://quik-buy.vercel.app" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Streamline your local shopping experience with Quik Buy—an MERN stack online store connecting you to nearby retail shops for effortless product ordering and doorstep delivery." />
+                        <Project title="Personal Portfolio Website" logo="pfloProj" github="https://github.com/VishankWagh/Vishank-Portfolio" live="https://portfolio-vishank-wagh.vercel.app" techs="ReactJs, HTML 5, CSS 3, Javascript" desc="Checkout my personal portfolio website to have a glimpse of my skillsets, experiences and how well i can contribute them in building something new and innovative." />
                         <Project title="Order Desk" logo="orddkProj" techs="ReactJs, NodeJs, ExpressJs, MongoDb" desc="Order desk is a portal for customers to order for food in restaurent by just few clicks and get the product delivered to their table in a quick and simple way." />
-                        <Project title="Pomodoro App Clone" logo="pmdrProj" techs="HTML 5, CSS 3, ReactJs" desc="Boost your productivity with Pomodor—an efficient React app that helps you work in focused intervals, setting timers like 25 minutes, punctuated by customizable short breaks of your choice." />
-                        <Project title="Todo List" logo="tdoProj" techs="HTML 5, CSS 3, ReactJs" desc="Stay organized with Todo—an interactive React app for swiftly adding and managing your daily tasks, ensuring a productive day ahead." />
+                        <Project title="Pomodoro App Clone" logo="pmdrProj" techs="ReactJs, HTML 5, CSS 3" desc="Boost your productivity with Pomodor—an efficient React app that helps you work in focused intervals, setting timers like 25 minutes, punctuated by customizable short breaks of your choice." />
                         <Project title="Futuristic Drones Website" logo="drnProj" live="https://vsw-designs-drones-technology.w3spaces.com/" techs="HTML 5, CSS 3" desc="Explore the world of drones through this classic portfolio website, showcasing the cutting-edge features of the company's drone technology." />
                         <Project title="Future Technology" logo="tchProj" techs="HTML 5, CSS 3" desc="Dive into the future with 'Future Technologies,' a captivating blog featuring a professional and visually appealing GUI that also showcases my designing ability. Explore the possibilities of tomorrow today." />
+                        {/* <Project title="Todo List" logo="tdoProj" techs="HTML 5, CSS 3, ReactJs" desc="Stay organized with Todo—an interactive React app for swiftly adding and managing your daily tasks, ensuring a productive day ahead." /> */}
                     </div>
                 </section>
                 <section className="certifications" id="certifications">

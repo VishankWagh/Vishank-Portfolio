@@ -741,7 +741,7 @@ h1 .name {
 .proj-btn {
     background-color: transparent;
     text-transform: uppercase;
-    padding: 0.5vmax 1vmax;
+    padding: 0.7vmax 1.2vmax;
     margin-top: 1.2vmax;
     margin-right: 1vmax;
     font-size: 1vmax;
@@ -749,6 +749,24 @@ h1 .name {
     border-radius: 50px;
     border: 2px solid var(--txt-color);
     transition: all 0.5s;
+}
+
+.live-btn {
+    /* background: linear-gradient(90deg, #020202, #281f00, #927200); */
+    background-color: var(--txt-color);
+    /* border-color: white; */
+}
+
+.live-btn a {
+    color: black !important;
+}
+
+.live-btn:hover {
+    background-color: black !important;
+}
+
+.live-btn:hover a {
+    color: var(--txt-color) !important;
 }
 
 .project:nth-child(even) .proj-btn {
@@ -761,6 +779,10 @@ h1 .name {
     text-decoration: none;
     color: var(--txt-color);
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5vmax;
 }
 
 .proj-btn span {
