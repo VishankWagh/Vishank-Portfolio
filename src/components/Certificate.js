@@ -13,12 +13,14 @@ const hrefs = {
     crtilstn,
 }
 
-const Certificate = ({ title, imgUrl, num }) => {
+const Certificate = ({ certificate, num }) => {
+    console.log("ci ", certificate.imgUrl);
+
     return (
         <div className="certificate">
-            <div className="certi-title">{title}</div>
+            <div className="certi-title">{certificate.title}</div>
             <div className="certi-img">
-                <img src={hrefs[imgUrl]} alt="" />
+                <img src={hrefs[certificate.imgUrl]} alt="" />
             </div>
             <div className="certi-crd">
                 <div className="crti-num">{num}</div>

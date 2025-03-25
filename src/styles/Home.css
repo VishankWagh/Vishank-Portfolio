@@ -682,7 +682,7 @@ h1 .name {
 .proj-img {
     transition: all 0.5s;
     width: 40%;
-    padding: 1vmax 3vw;
+    padding: 1vmax 2vw;
 }
 
 .proj-img {
@@ -799,7 +799,7 @@ h1 .name {
 }
 
 .proj-lang {
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin: 1vmax 0 0.6vmax;
     color: #ffffff;
     letter-spacing: 1px;

@@ -1,6 +1,7 @@
 import React from 'react'
 import qbProj from "../images/proj_quikbuy.png";
 import slmsProj from "../images/proj_slms.png";
+import efqProj from "../images/proj_efq.png";
 import drnProj from "../images/proj_drone.png";
 import pmdrProj from "../images/proj_pomodor.png";
 import tchProj from "../images/proj_technology.png";
@@ -16,39 +17,40 @@ const hrefs = {
     tchProj,
     tdoProj,
     orddkProj,
-    pfloProj
+    pfloProj,
+    efqProj,
 }
 
-const Project = ({ title, logo, desc, github, live, techs }) => {
+const Project = ({ project }) => {
     return (
         <div className="project">
             <div className="proj-img">
-                <img src={hrefs[logo]} alt="" />
+                <img src={hrefs[project.logo]} alt="" />
             </div>
             <div className="proj-content">
-                <div className="proj-title">{title}</div>
+                <div className="proj-title">{project.title}</div>
                 <div className="proj-desc">
                     <p>
-                        {desc}
+                        {project.desc}
                     </p>
 
                 </div>
-                {live && <button className="proj-btn live-btn btn">
-                    <a href={live} target="_blank" rel="noreferrer">
+                {project.live && <button className="proj-btn live-btn btn">
+                    <a href={project.live} target="_blank" rel="noreferrer">
                         View Live <span className="material-symbols-outlined">
                             call_made
                         </span>
                     </a>
                 </button>}
-                {github && <button className="proj-btn btn">
-                    <a href={github} target="_blank" rel="noreferrer">
+                {project.github && <button className="proj-btn btn">
+                    <a href={project.github} target="_blank" rel="noreferrer">
                         Github link <span className="material-symbols-outlined">
                             call_made
                         </span>
                     </a>
                 </button>}
                 <div className="proj-lang">
-                    <b>Technologies</b> : {techs}
+                    <b>Technologies</b> : {project.techs}
                 </div>
             </div>
         </div>

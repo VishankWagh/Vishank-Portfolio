@@ -7,6 +7,7 @@ import htmlLogo from "../images/html.jpg";
 import css from "../images/css.jpg";
 import js from "../images/js.jpg";
 import cProg from "../images/c.jpg";
+import java from "../images/java.jpg";
 import python from "../images/python.jpg";
 import tailwind from "../images/tlwnd.png";
 import othSkill from "../images/brain.png";
@@ -19,6 +20,7 @@ const hrefs = {
     htmlLogo,
     css,
     js,
+    java,
     cProg,
     python,
     tailwind,
