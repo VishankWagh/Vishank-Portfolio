@@ -1,5 +1,5 @@
 import "../styles/Home.css";
-import prof from "../images/pflio_img_edt.png";
+import prof from "../images/portfolio_img_2025.png";
 // import certiImg from "../images/certificate.png";
 // import resumePDF from "../files/RESUME.pdf";
 // import resume from "../images/resume_image.png";
@@ -29,7 +29,7 @@ function Home() {
                     <div className="left-sec">
                         <h1>
                             <div className="greet">Hii There!! , Myself</div>
-                            <div className="name">Vishank Wagh</div>
+                            <div className="name">VISHANK WAGH</div>
                         </h1>
                         <div className="title">Software Development <span className="mern">Engineer</span> </div>
                         <div className="intro-skills">
@@ -41,10 +41,14 @@ function Home() {
                     </div>
                     <div className="right-sec">
                         <div className="dev-logo-div"><img src="https://icons8.com/icon/11260/source-code" alt="" /></div>
-                        <img className="my-img" src={prof} alt="" />
+                        <div className="my-image">
+                            <img className="my-img" src={prof} alt="" />
+                        </div>
                         <span className="dev-logo">{"</>"}</span>
                         <span className="dev-logo">{"</>"}</span>
                     </div>
+                    <span className="bg-cir-1"></span>
+                    <span className="bg-cir-2"></span>
                 </section>
                 <section className="about" id="about">
                     <div className="sec-title">About</div>
