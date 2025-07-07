@@ -24,13 +24,13 @@ const hrefs = {
 const Experience = ({ expr, first }) => {
     return (
         <div className={`experience ${first}`}>
-            <div className="expr-maintitle">
+            <a className="expr-maintitle" href={expr.url}>
                 <span className="expr-logo"><img src={hrefs[expr.logo]} alt="" /></span>
                 <span className="expr-title">
-                    <a href="https://www.linkedin.com/company/mrloggage/">{expr.company}</a>
+                    <span href={expr.url}>{expr.company}</span>
                 </span>
                 <span className="expr-role"> - {expr.role}</span>
-            </div>
+            </a>
             <div className="position"><b>Role:</b><br />Internship</div>
             <div className="expr-duration">{expr.duration}</div>
             <div className="expr-desc">

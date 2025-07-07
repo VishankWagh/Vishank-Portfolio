@@ -115,28 +115,28 @@ section.intro {
     top: 25%;
     left: -10%;
     text-align: center;
-    z-index: -1;
-    color: black;
+    z-index: 0;
+    color: rgba(0, 0, 0, 0.455);
     transition: all 0.5s;
 }
 
 .bg-cir-1,
 .bg-cir-2 {
     position: absolute;
-    height: 35rem;
-    width: 35rem;
+    height: 35vmax;
+    width: 35vmax;
     z-index: -1;
     top: 2%;
     right: 3.5%;
     border-radius: 50%;
-    opacity: 0.8;
+    opacity: 0.9;
     filter: blur(2px);
     background-color: var(--txt-color);
 }
 
 .bg-cir-2 {
-    height: 24rem;
-    width: 24rem;
+    height: 24vmax;
+    width: 24vmax;
     right: 23%;
     top: 3.3%;
 }
@@ -146,7 +146,7 @@ section.intro {
     margin-top: 0.5rem;
     font-size: 1em;
     font-weight: 600;
-    opacity: 0.7;
+    opacity: 0.8;
     letter-spacing: 1px;
 }
 
@@ -224,6 +224,7 @@ h1 .name {
         font-weight: 900;
         top: -55%;
         left: 55%;
+        opacity: 0.3;
     }
 
     .intro .my-img {
@@ -234,6 +235,16 @@ h1 .name {
     .intro-skills {
         font-size: 1.1em;
         width: 200%;
+    }
+
+    .bg-cir-1 {
+        top: 7%;
+        right: 7%;
+    }
+
+    .bg-cir-2 {
+        top: 8%;
+        left: 4%;
     }
 }
 
@@ -250,6 +261,22 @@ h1 .name {
     font-size: 1.5vmax;
     letter-spacing: 2px;
     line-height: 2.5rem;
+}
+
+.code-profiles {
+    color: black;
+    background-color: var(--txt-color);
+    opacity: 0.7;
+    margin-top: 1vh;
+    padding: 0.4vw 1vw;
+    border-radius: 50px;
+}
+
+.code-profile-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .abt-btns {
@@ -584,6 +611,7 @@ h1 .name {
 }
 
 .expr-maintitle {
+    display: block;
     padding: 1vmax 2vmax;
     margin-bottom: 1vmax;
     background-color: #ffc8004b;
@@ -595,12 +623,12 @@ h1 .name {
     font-weight: 600;
 }
 
-.expr-title a {
+a.expr-maintitle {
     text-decoration: none;
     color: inherit;
 }
 
-.expr-title:hover {
+.expr-maintitle:hover {
     text-decoration: underline;
 }
 

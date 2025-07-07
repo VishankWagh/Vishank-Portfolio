@@ -97,8 +97,9 @@ export const experiences = [
         company: "AccioJob",
         logo: "accio",
         role: 'Software Development Trainee',
-        duration: "Oct 2024 - Present",
-        desc: ['Undergoing a specialized training in Data Structures and Algorithms (Java) and Software Development with AccioJob, in partnership with Parul University, focusing on building problem solving and industry-ready skills.'],
+        url: "https://www.linkedin.com/school/acciojob/ ",
+        duration: "Oct 2024 - May 2025",
+        desc: ['Completed a specialized training in Data Structures and Algorithms (Java) and Software Development with AccioJob, in partnership with Parul University, focusing on building problem solving and industry-ready skills.'],
         skills: [
             {
                 logo: 'othSkill',
@@ -122,8 +123,9 @@ export const experiences = [
         company: "Mr Loggage",
         logo: "mrLgg",
         role: 'Full Stack Web Developer',
+        url: "https://www.linkedin.com/company/mrloggage/",
         duration: "Jun 2024 - Aug 2024",
-        desc: ['Vadodara, Gujarat, India · On-site Developing a Dynamic and User-friendly project on MERN Stack technology by collaboration with Mr Loggage team.'],
+        desc: ['On-site Developed a Dynamic and User-friendly project on MERN Stack technology by collaboration with Mr Loggage team.'],
         skills: [
             {
                 logo: 'react',
@@ -147,6 +149,7 @@ export const experiences = [
         company: "Navpad Infotech",
         logo: "nvpd",
         role: 'Full Stack Developer',
+        url: "http://new.navpadinfotech.com/",
         duration: "Jan 2024 - May 2024",
         desc: ["Built a Real World project 'Student Leave Management System' using the latest stack - MERN Stack, which is assigned by Navpad Infotech as a project of my Academic journey."],
         skills: [
@@ -175,7 +178,6 @@ export const projects = [
         title: "EffiQ - Queue Avoidance System",
         logo: "efqProj",
         github: "https://github.com/UshankWagh/UnQue",
-        live: "",
         techs: "Socket.io, Real-time App, MERN Stack, REST APIs",
         desc: "Developed a Real Time online queueing system that reduces wait times for customers at shop and streamline large queue handling for shopkeepers.",
     },
@@ -183,7 +185,6 @@ export const projects = [
         title: "Student Leave Management System",
         logo: "slmsProj",
         github: "https://github.com/VishankWagh/SLMS",
-        live: "https://student-leave-management-system.netlify.app",
         techs: "ReactJs, NodeJs, ExpressJs, MongoDb",
         desc: "Built an online platform to tackle a real world problem by managing student’s leaves on the SLMS system, which was assigned to me as an intern at Navpad Infotech.",
     },

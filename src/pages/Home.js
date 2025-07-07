@@ -29,7 +29,7 @@ function Home() {
                     <div className="left-sec">
                         <h1>
                             <div className="greet">Hii There!! , Myself</div>
-                            <div className="name">VISHANK WAGH</div>
+                            <div className="name">Vishank Wagh</div>
                         </h1>
                         <div className="title">Software Development <span className="mern">Engineer</span> </div>
                         <div className="intro-skills">
@@ -53,9 +53,11 @@ function Home() {
                 <section className="about" id="about">
                     <div className="sec-title">About</div>
                     <div className="abt-content">
-                        <b>👋 Welcome,</b> I am an aspiring Software Developer pursuing an Integrated Master's in Computer Applications at Parul University, Vadodara, Gujarat.
+                        <b>👋 Welcome,</b> I am an aspiring Software Developer completed my Integrated Master's in Computer Applications at Parul University, Vadodara, Gujarat.
                         <br /><br />
                         🌟Currently embarking on the path to Master Data Structures and Algorithms 🚀 by taking up the <i>#Learn in Public</i> Challenge 👊.
+                        <br />
+                        <span className="code-profiles">Problems Solved: <a href="https://leetcode.com/u/VishankWagh/" target="_blank" rel="noreferrer" className="code-profile-link">Leetcode - 175+</a> | <a href="https://drive.google.com/file/d/1BeQltQ79KvWEXp7fj9ioVCSfmRtURzDb/view" target="_blank" rel="noreferrer" className="code-profile-link">Acciojob - 360+</a></span>
                         <br /><br />
                         ✒️ My key skills are Java, Javascript and problem solver. During my academic journey I also worked on a couple of real world projects sharpening my skills.
                         {/* <b>👋 Welcome,</b> I am Vishank Shailesh Wagh, an aspiring software developer pursuing an Integrated Master's in Computer Applications at Parul University. 🌐
@@ -65,7 +67,7 @@ function Home() {
                     </div>
                     <div className="abt-btns">
                         <a href="#contact" className="hireme-btn">Contact Me</a>
-                        <a href="https://drive.google.com/file/d/1oKlouhEB4LYSDf059G4N5d1L3T5Wwtqo/view?usp=sharing" target="_blank" className="resume-btn">View Resume</a>
+                        <a href="https://drive.google.com/file/d/16hxsjUOYLiG8TOWAc79YLWF6tEyWQb0q/view?usp=sharing" target="_blank" rel="noreferrer" className="resume-btn">View Resume</a>
                         {/* <a href="#about" className="resume-btn" onClick={() => {
                             const vr = document.getElementById("view-resume").style;
                             vr.visibility = "visible";

@@ -35,7 +35,7 @@ const Skill = ({ skill, percent, sklLogo }) => {
             </div>
             <div className="skl">
                 <div className="skl-name">{skill}</div>
-                <div className="skl-bar"><div className="skl-prcnt" style={{ width: `${percent}%` }}><div className="prcnt">{percent + "%"}</div></div></div>
+                {/* <div className="skl-bar"><div className="skl-prcnt" style={{ width: `${percent}%` }}><div className="prcnt">{percent + "%"}</div></div></div> */}
             </div>
         </div>
     )
